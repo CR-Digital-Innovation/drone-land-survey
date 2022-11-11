@@ -7,4 +7,4 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/CR-Digital-Innovation/drone-land-survey?style=social)
 
 CriticalRiver's process flow of implementing Land Survey using Drones
-![image](https://user-images.githubusercontent.com/111768484/201318435-2e439dcd-5787-4ce6-a348-4cd7bdc446f3.png)
+![image](https://user-images.githubusercontent.com/112068881/201333870-2a226c4c-adf6-4cfb-b8b9-edbf6aba9823.png)
