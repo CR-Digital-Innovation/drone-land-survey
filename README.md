@@ -7,7 +7,21 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/CR-Digital-Innovation/drone-land-survey?style=social)
 
 ![image](https://user-images.githubusercontent.com/112068881/201333870-2a226c4c-adf6-4cfb-b8b9-edbf6aba9823.png)
+
 CriticalRiver's process flow of implementing Land Survey using Drones
+
+![image](https://user-images.githubusercontent.com/112068881/201337338-23421099-e2e8-4586-a7db-6764be55e0d8.png)
+
+The entire workflow of the application is classified into the following functional areas
+1. Vendor Registration
+2. Drone Image Synchronization
+3. Drone Survey Details Amendment and Orthomosaic Initialization 
+4. Orthomosaic Image Generation 
+5. Orthomosaic Quality Check and Boundary Generation
+6. Notification  
+7. Boundary Verification System
+8. Dashboards and Reports
+
 
 ![image](https://user-images.githubusercontent.com/112068881/201334152-0a49a9e9-a504-4c41-b29f-16c72fa40ea4.png)
 
