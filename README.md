@@ -22,14 +22,14 @@ The entire workflow of the application is classified into the following function
 7. Boundary Verification System
 8. Dashboards and Reports
 
-
 ![image](https://user-images.githubusercontent.com/112068881/201334152-0a49a9e9-a504-4c41-b29f-16c72fa40ea4.png)
 
-The below diagram deptics the functional flow of how the captured images from drone are getting stored on cloud containers and then these images are procssed and convered into Orthomosic image using our AI capablities. These are further mapped to respective owners property. The application also has the capablity of manually editting the the defined boundaries using WebGIS (ESRI) custome application built on Mobile & WebApps. The entire process has various notifications sent  to respective stakeholders at every stage.
+The below diagram depicts the functional flow of how the captured images from drone are getting stored on cloud containers and then these images are procssed and convered into Orthomosic image using our AI capablities. These are further mapped to respective owners property. The application also has the capablity of manually editting the the defined boundaries using WebGIS (ESRI) custome application built on Mobile & WebApps. The entire process has various notifications sent  to respective stakeholders at every stage.
 
 ![image](https://user-images.githubusercontent.com/112068881/201334198-fd208786-ba2d-48c3-82b8-acdeb65c18fd.png)
 
-              The above dashboard is showing the various live stages of processing across various districts
+The above dashboard is showing the various live stages of processing across various districts
 
 ![image](https://user-images.githubusercontent.com/112068881/201334228-286eb471-fdcf-435e-8b10-f2c36be7c55c.png)
-              The above dashboard is a drilldown report of processed images by each vendors
+
+The above dashboard is a drilldown report of processed images by each vendors
