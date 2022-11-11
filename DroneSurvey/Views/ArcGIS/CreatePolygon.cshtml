@@ -1,0 +1,177 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>
+        CriticalRiver Drone Image Upload
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+    <script src="~/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/main.js" type="text/javascript"></script>
+    <script src="~/js/site.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.24/"></script>
+
+   <script>
+
+  require([
+    "esri/config",
+    "esri/Map",
+    "esri/views/MapView",
+
+    "esri/Graphic",
+    "esri/layers/GraphicsLayer"
+
+    ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer) {
+
+  esriConfig.apiKey = "YOUR_API_KEY";
+
+  const map = new Map({
+    basemap: "arcgis-topographic" //Basemap layer service
+  });
+
+  const view = new MapView({
+    map: map,
+    center: [-118.80500,34.02700], //Longitude, latitude
+    zoom: 13,
+    container: "viewDiv"
+ });
+
+ const graphicsLayer = new GraphicsLayer();
+ map.add(graphicsLayer);
+
+ const point = { //Create a point
+    type: "point",
+    longitude: -118.80657463861,
+    latitude: 34.0005930608889
+ };
+ const simpleMarkerSymbol = {
+    type: "simple-marker",
+    color: [226, 119, 40],  // Orange
+    outline: {
+        color: [255, 255, 255], // White
+        width: 1
+    }
+ };
+
+ const pointGraphic = new Graphic({
+    geometry: point,
+    symbol: simpleMarkerSymbol
+ });
+ graphicsLayer.add(pointGraphic);
+
+    // Create a line geometry
+ const polyline = {
+    type: "polyline",
+    paths: [
+        [-118.821527826096, 34.0139576938577], //Longitude, latitude
+        [-118.814893761649, 34.0080602407843], //Longitude, latitude
+        [-118.808878330345, 34.0016642996246]  //Longitude, latitude
+    ]
+ };
+ const simpleLineSymbol = {
+    type: "simple-line",
+    color: [226, 119, 40], // Orange
+    width: 2
+ };
+
+ const polylineGraphic = new Graphic({
+    geometry: polyline,
+    symbol: simpleLineSymbol
+ });
+ graphicsLayer.add(polylineGraphic);
+
+ // Create a polygon geometry
+ const polygon = {
+    type: "polygon",
+    rings: [
+        [-118.818984489994, 34.0137559967283], //Longitude, latitude
+        [-118.806796597377, 34.0215816298725], //Longitude, latitude
+        [-118.791432890735, 34.0163883241613], //Longitude, latitude
+        [-118.79596686535, 34.008564864635],   //Longitude, latitude
+        [-118.808558110679, 34.0035027131376]  //Longitude, latitude
+    ]
+ };
+
+ const simpleFillSymbol = {
+    type: "simple-fill",
+    color: [227, 139, 79, 0.8],  // Orange, opacity 80%
+    outline: {
+        color: [255, 255, 255],
+        width: 1
+    }
+ };
+
+ const popupTemplate = {
+    title: "{Name}",
+    content: "{Description}"
+ }
+ const attributes = {
+    Name: "Graphic",
+    Description: "I am a polygon"
+ }
+
+ const polygonGraphic = new Graphic({
+    geometry: polygon,
+    symbol: simpleFillSymbol,
+
+    attributes: attributes,
+    popupTemplate: popupTemplate
+
+ });
+ graphicsLayer.add(polygonGraphic);
+
+ });
+</script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="~/images/critical_river_final.svg" alt="" width="230" height="41">
+            </a>
+        </div>
+    </nav>
+    <header>
+        <div class="header">
+            <div class="container">
+                <h6>ArcGIS</h6>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="padding-bottom: 100px !important;">
+        <div class="row survey-title">
+            <label id="survey-Details">ArcGIS</label>
+        </div>
+
+        <br />
+
+        <div id="viewDiv"></div>
+
+    </div>
+    <footer class="fixed-bottom page-footer font-small blue">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row footer-copyright text-center">
+                <div class="col-sm-12 col-md-12 col-sm-12 footerCl">&copy;&nbsp;Copyright @DateTime.Now.Year - CriticalRiver </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        //alert("Hi");
+    });
+</script>
+</html>

@@ -1,0 +1,253 @@
+﻿@model DroneSurvey.Models.ImageUpload
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>
+        CriticalRiver Drone Image Upload
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    @* <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />*@
+    @* <link rel="stylesheet" href="~/css/bootstrap.min.css">*@
+    @* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
+
+
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <link href="https://cdn.datatables.net/scroller/1.5.1/css/scroller.dataTables.min.css" rel="stylesheet" />
+    <script src="https://cdn.datatables.net/scroller/1.5.1/js/dataTables.scroller.min.js"></script>
+
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.jqueryui.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/scroller/2.0.1/css/scroller.jqueryui.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="~/images/critical_river_final.svg" alt="" width="230" height="41">
+            </a>
+        </div>
+    </nav>
+    <header>
+        <div class="header">
+            <div class="container">
+                <h6>Image Upload</h6>
+            </div>
+        </div>
+    </header>
+    <div id="popupModal" style="width: 1800px;
+        height: 900px;
+        display: none;
+        padding: 15px;">
+    </div>
+    <div class="container" style="padding-bottom: 100px !important;">
+        <div class="row survey-title">
+            <label id="survey-Details">Image Upload</label>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                @*@using (Html.BeginForm("Upload", "ImageUpload", FormMethod.Post, new { id = "imageUploadform" }))
+                {*@
+                <form method="post" enctype="multipart/form-data" asp-controller="ImageUpload" asp-action="Upload">
+                    <div class="row">
+                        <div class="col-md-10 col-sm-10 col-lg-10">
+                            <div class="form-group">
+                                <label>Bulk Image Upload</label>
+                                <input type="file" name="files" multiple />
+                                <br />
+                                @*@Html.TextBoxFor(m=>m.DirPath, new { @class = "form-control", id = "txtDirPath" })
+                                <br />
+                                <input type="file" id="folder" webkitdirectory multiple />*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" id="btnImageUpload" class="btn-custom btn btn-primary" style="background:#FF6801;border-color:#FF6801; color:White; width:77px; margin-left:14px;" value="Upload" />
+                    </div>
+                </form>
+                @*}*@
+            </div>
+        </div>
+        <br />
+        <div class="row survey-title">
+            <label id="survey-Details">Upload History</label>
+        </div>
+        <div class="col-md-12 col-sm-12 col-lg-12 table-data" style="overflow:scroll;margin-bottom:5%;">
+            <table id="tblUploadHistory" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Uploaded Time</th>
+                        <th>Upload Status</th>
+                        <th>Image Uploaded Count</th>
+                        <th>Orthomosaic Creation Status</th>
+                        <th>View</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <footer class="fixed-bottom page-footer font-small blue">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row footer-copyright text-center">
+                <div class="col-sm-12 col-md-12 col-sm-12 footerCl">&copy;&nbsp;Copyright @DateTime.Now.Year - CriticalRiver </div>
+            </div>
+        </div>
+    </footer>
+    @* <script src="~/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>*@
+    @* <script src="~/js/main.js" type="text/javascript"></script>*@
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        // Create dialog
+        $("#popupModal").dialog({
+            autoOpen: false,
+            modal: true,
+            minWidth: 1000,
+            dialogClass: 'dialogue-border',
+            draggable: true,
+            resizable: false
+        });
+        BindDataTable();
+
+        //document.getElementById("folder").addEventListener("change", function(event) {
+        //$("#txtDirPath").val("D:\\Workspace\\Drone\\Drone Images\\F-20221003T122812Z-003");
+        //console.log(event.target);
+        //alert(event.target);
+        //var output = document.querySelector("ul");
+        //var files = event.target.files;
+
+        //for (var i = 0; i < files.length; i++) {
+        //    var item = document.createElement("li");
+        //    item.innerHTML = files[i].webkitRelativePath;
+        //    output.appendChild(item);
+        //};
+        //}, false);
+
+        /// Add question
+        $("#btnAddNewQuestion").click(function() {
+            AddQuestionToSection(0);
+        });
+
+    });
+    function BindDataTable() {
+
+        var datatbl = $("#tblUploadHistory").DataTable();
+        datatbl.clear();
+        datatbl.destroy();
+
+        var table = $("#tblUploadHistory");
+        table.find('tbody tr').empty();
+
+        $.ajax({
+            url: "GetImageUploadHistory",
+            type: "GET",
+            async: false,
+            success: function(data) {
+                if (data.data != null && data.data != undefined) {
+                    var tr = '';
+                    $.each(data.data, function(i, e) {
+                        tr += '<tr>'
+                            + '<td>' + data.data[i].uploadTime + '</td>'
+                            + '<td>' + data.data[i].uploadStatus + '</td>'
+                            + '<td>' + data.data[i].imageUploadCount + '</td>'
+                            + '<td>' + data.data[i].orthomosaicStatus + '</td>'
+                            + '<td data-id="' + data.data[i].id + '" style="text-align:center;">'
+                            + '<span title = "View" class="ViewImage"><img src="/images/search.png"></span>'
+                            + '</td>'
+                            + '</tr>';
+                    });
+                    table.find('tbody').append(tr);
+                }
+                else {
+                    alert("No Data");
+                }
+            },
+            Error: function() {
+                alert("Error");
+            }
+        });
+
+        $("#tblUploadHistory").DataTable({
+            retrieve: true,
+            "scrollCollapse": true,
+            "searching": true,
+            "destroy": true,
+            "columnDefs": [
+                {
+                    "targets": 0,
+                    "orderable": false,
+                    "visible": true,
+                    "width": "20%"
+                },
+                {
+                    "targets": 1,
+                    "visible": true,
+                    "width": "20%",
+                    className: 'dt-body-center',
+                },
+                {
+                    "targets": 2,
+                    "visible": true,
+                    "width": "20%",
+                    className: 'dt-body-center',
+                },
+                {
+                    "targets": 3,
+                    "visible": true,
+                    "width": "20%",
+                    className: 'dt-body-center',
+                },
+                {
+                    "targets": 4,
+                    "visible": true,
+                    "width": "10%"
+                },
+            ],
+            "order": [1, "ASC"],
+            "fnDrawCallback": function(oSettings) {
+                EventsOnDataTable();
+            }
+        });
+        EventsOnDataTable();
+    }
+    function EventsOnDataTable() {
+        //Edit Question
+        $(".ViewImage").off('click').on('click', function(e) {
+
+            $.ajax({
+                url: 'ViewImageModelPopup',
+                type: 'GET',
+                async: false,
+                success: function(data) {
+                    $("#popupModal").html(data);
+                    $("#popupModal").dialog('open');
+
+                    ViewImageModelPopupEvents();
+                },
+                error: function(error) {
+                    currentEle.prop("disabled", false);
+                }
+            });
+        });
+    }
+    function ViewImageModelPopupEvents() {
+
+    }
+</script>
+</html>

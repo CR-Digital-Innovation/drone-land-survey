@@ -1,0 +1,154 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model DroneSurvey.Models.Login
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>
+        CriticalRiver
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+
+    <style>
+        .form_error {
+            border-color: red;
+            border: 1px solid red !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <img src="~/images/AP_TransBG.png" alt="">
+        </div>
+        <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <img src="~/images/critical_river_final.svg" alt="" style="margin-top:15%" width="230" height="41">
+        </div>
+    </div>
+    <div class="container" style="padding-bottom: 100px !important;">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                @using (Html.BeginForm("Validate", "Login", FormMethod.Post, new { id = "frmLogin" }))
+                {
+                    <div class="card">
+                        <h5 class="card-header page-header">DRONE VENDOR LOGIN</h5>
+                        <div class="card-body">
+                            @* <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>*@
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="form-group">
+                                        <label style="font-size:20px !important;">Email Id</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-lg-5">
+                                    <div class="form-group">
+                                        @Html.TextBoxFor(m=>m.EmailId, new { @class = "form-control", id = "txtEmailId" })
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-lg-3">
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-lg-4">
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-2">
+                                    <div class="form-group">
+                                        <label style="font-size:20px !important;">Password</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-lg-5">
+                                    <div class="form-group">
+                                        @Html.TextBoxFor(m=>m.Password, new { @class = "form-control", id = "txtPassword",type="password" })
+                                        <a href="#" style="color:darkblue !important">Forgot Password</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-lg-3">
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row" style="display: flex;justify-content: space-around;">
+                                <input type="button" id="btnSubmit" class="btn-custom btn btn-primary" style="background:#FF6801;border-color:#FF6801; color:White; width:100px; margin-left:14px;" value="Login" />
+                            </div>
+                            <br />
+                            <div class="row" style="display: flex;justify-content: space-around;">
+                                @if (@Model != null)
+                                {
+                                    <label id="lblMsg" style="color:red;">@Model.ErrorMsg</label>
+                                }
+                            </div>
+                            <br />
+                            <div class="row" style="display: flex;justify-content: space-around;">
+                                @Html.ActionLink("Register", "Register", "Registration")
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <footer class="fixed-bottom page-footer font-small blue">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row footer-copyright text-center">
+                <div class="col-sm-12 col-md-12 col-sm-12 footerCl">&copy;&nbsp;Copyright @DateTime.Now.Year - CriticalRiver </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/main.js" type="text/javascript"></script>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#btnSubmit").click(function() {
+            if (validateForm()) {
+                $("#frmLogin").submit();
+            }
+        });
+
+        //remove validation error on focus
+        $("#txtEmailId").focus(function() {
+            $('#txtEmailId').removeClass("form_error");
+        });
+        $("#txtPassword").focus(function() {
+            $('#txtPassword').removeClass("form_error");
+        });
+
+
+    });
+
+
+
+
+    //validate all textbox and textareas
+    function validateForm() {
+        var isValid = true;
+
+        if ($("#txtEmailId").val().length == 0) {
+            $("#txtEmailId").addClass("form_error");
+            isValid = false;
+        }
+        if ($("#txtPassword").val().length == 0) {
+            $("#txtPassword").addClass("form_error");
+            isValid = false;
+        }
+        return isValid;
+    }
+</script>
+</html>

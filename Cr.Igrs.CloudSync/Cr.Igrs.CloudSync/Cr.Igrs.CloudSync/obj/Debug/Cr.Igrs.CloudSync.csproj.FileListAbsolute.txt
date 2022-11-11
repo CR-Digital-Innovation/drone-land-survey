@@ -1,0 +1,94 @@
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Cr.Igrs.CloudSync.exe
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Core.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Storage.Blobs.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Storage.Common.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Memory.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Numerics.Vectors.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Text.Json.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Cr.Igrs.CloudSync.exe.config
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\log4net.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Azure.Storage.Common.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Newtonsoft.Json.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Buffers.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.IO.Hashing.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Memory.Data.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Text.Encodings.Web.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.ValueTuple.dll
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Core.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Storage.Blobs.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Storage.Common.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\log4net.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Azure.Storage.Common.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Newtonsoft.Json.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Buffers.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.IO.Hashing.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Memory.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Memory.Data.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Numerics.Vectors.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Text.Encodings.Web.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Text.Json.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.ValueTuple.xml
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.csproj.AssemblyReference.cache
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.csproj.SuggestedBindingRedirects.cache
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.csproj.CoreCompileInputs.cache
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.csproj.CopyComplete
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.exe
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.pdb
+C:\Jags\Work\DLRS\SyncTool\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Cr.Igrs.CloudSync.pdb
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Cr.Igrs.CloudSync.exe.config
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Cr.Igrs.CloudSync.exe
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Cr.Igrs.CloudSync.pdb
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Core.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Storage.Blobs.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Storage.Common.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\log4net.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Azure.Storage.Common.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Newtonsoft.Json.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Buffers.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.IO.Hashing.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Memory.Data.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Memory.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Numerics.Vectors.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Text.Encodings.Web.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Text.Json.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.ValueTuple.dll
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Core.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Storage.Blobs.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Azure.Storage.Common.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\log4net.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Azure.Storage.Common.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\Newtonsoft.Json.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Buffers.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.IO.Hashing.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Memory.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Memory.Data.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Numerics.Vectors.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Text.Encodings.Web.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Text.Json.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\bin\Debug\System.ValueTuple.xml
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.csproj.AssemblyReference.cache
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.csproj.SuggestedBindingRedirects.cache
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.csproj.CoreCompileInputs.cache
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.csproj.CopyComplete
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.exe
+D:\Workspace\Drone\Source Code\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\Cr.Igrs.CloudSync\obj\Debug\Cr.Igrs.CloudSync.pdb

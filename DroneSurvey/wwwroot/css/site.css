@@ -1,0 +1,764 @@
+
+/*ArcGIS Style Start*/
+
+#viewDiv{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100%;
+}
+
+/*ArcGIS Style ends*/
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    /*background-image: url("../images/cr-survey-bg.png");*/
+    background-color: white;
+    /*font-family: "Lato" !important;*/
+    color: #333333;
+    font-style: normal !important;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label, p {
+    color: #333333;
+}
+
+header {
+    background: #013E7D;
+    color: #fff;
+    min-height: 30px;
+    padding-top: 5px;
+    padding-left: 2rem;
+}
+
+.navbar > .container, .header > .container {
+    margin-left: inherit !important;
+}
+
+/*.section1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center !important;
+    font-size: large;
+}
+
+.section2 {
+    border-radius: 5px;
+    background-color: #607d8b;
+    padding: 5px;
+    color: #ffffff;
+}
+
+.section3 {
+    border: 1px solid #607d8b;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2px;
+    margin-right: 4px;
+}
+
+.que-section {
+    background: #FFFFFF;*/ /*#F6F5F5*/
+    /*padding: 20px !important;
+    border-radius: 4px !important;
+}
+
+.section {
+    background: #FFFFFF;*/ /*#F6F5F5*/
+    /*padding: 20px !important;
+    border-radius: 4px !important;
+}*/
+
+.card {
+    background-color: white;
+}
+
+.card-header {
+    font: 600;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    font-weight: bold !important;
+    background-color: #013E7D;
+}
+
+.card-text {
+    font: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#title, #description {
+    text-align: center !important;
+    font-size: 1rem;
+    color: #0078D4;
+}
+
+label, #survey-form p {
+    font-size: 14px !important;
+}
+
+#dropdown, #nt-sure, #option-eight {
+    margin-bottom: 20px !important;
+}
+
+.imp {
+    color: red;
+}
+
+.submitbtn {
+    float: right;
+    width: 20%;
+    margin: 10px;
+    color: #FFFFFF;
+    background-color: #FF4F19;
+    border-color: #e53600;
+    height: 40px;
+}
+
+    .submitbtn:hover {
+        background-color: #ff7519;
+        border-color: #e53600;
+    }
+
+.nextbtn, .backbtn {
+    float: right;
+    width: 20%;
+    margin: 10px;
+    color: #013E7D;
+    background-color: #FFFFFF;
+    border-color: #013E7D;
+    height: 40px;
+}
+
+    .nextbtn:hover, .backbtn:hover {
+        color: #FFFFFF;
+        background-color: #013E7D;
+    }
+
+input[type=radio] {
+    /* box-shadow: 2px 3px 5px 0px;
+        /* border: none; */
+    /* border-radius: 999px; */
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    /* -webkit-appearance: inherit;*/
+    border: 1px solid #999999;
+    position: relative;
+}
+
+input.invalid {
+    border: 1px solid #e03a0666;
+}
+
+.tab {
+    display: none
+}
+
+.thanks-message {
+    display: none
+}
+
+.other {
+    border: none;
+    border-bottom: 1px solid #837a7a;
+    width: 80%;
+    margin-left: 20px;
+}
+
+/*#btnSubmit {
+    background: #FF4F19;
+    border: #FF4F19;
+    border-radius: 4px;
+    color: #FFFFFF;
+    width: 220px;
+}*/
+
+/*.que-section p {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    font-style: normal;
+    line-height: 19px;
+}*/
+
+footer {
+    /*height:80px;*/
+    background-color: #333333;
+    padding-top: 0px !important;
+}
+
+.footer-right a, .footer-copyright {
+    color: #FFFFFF !important;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+    .opt {
+        width: auto !important;
+    }
+}
+
+.navbar {
+    padding: 0px !important;
+}
+
+.form_error {
+    border-color: red;
+    border: 1px solid red !important;
+}
+
+.footerCl {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: small;
+}
+
+.page-header {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    background: #013E7D;
+    color: #fff;
+    padding-left: 1.2rem;
+}
+
+.navbar > .container, .header > .container {
+    margin-left: inherit !important;
+}
+
+/*.section1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section2 {
+    border-radius: 5px;
+    background-color: #607d8b;
+    padding: 5px;
+    color: #ffffff;
+}
+
+.section3 {
+    border: 1px solid #607d8b;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.que-section {
+    background: #d1e0e0 !important;
+    padding: 20px !important;
+    border-radius: 4px !important;
+}
+
+.page-section {
+    background: #F5ECEA;
+    padding: 20px !important;
+    border-radius: 4px !important;
+}
+
+.que-edit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .que-edit img {
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 18px;
+        height: 18px;
+    }
+*/
+
+#title, #description {
+    text-align: center !important;
+    font-size: 1rem;
+    color: #0078D4;
+}
+
+label, #survey-form p {
+    font-size: 14px !important;
+}
+
+#dropdown, #nt-sure, #option-eight {
+    margin-bottom: 20px !important;
+}
+
+.imp {
+    color: red;
+}
+
+.nextbtn, .backbtn, .nextbtn:hover, .backbtn:hover {
+    float: right;
+    width: 20%;
+    margin: 10px;
+    background-color: #b39ddb;
+    border-color: #b39ddb;
+    height: 40px;
+}
+
+input[type=radio] {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    border: 1px solid #999999;
+    position: relative;
+}
+
+input.invalid {
+    border: 1px solid #e03a0666;
+}
+
+.tab {
+    display: none
+}
+
+.thanks-message {
+    display: none
+}
+
+.other {
+    border: none;
+    border-bottom: 1px solid #837a7a;
+    width: 80%;
+    margin-left: 20px;
+}
+
+/* Dashboard */
+.navbar {
+    padding: 0px !important;
+}
+
+.nav-link.active {
+    background-color: #ff6801;
+}
+
+.nav-item {
+    line-height: 35px;
+}
+
+.active > .nav-link {
+    color: #FFFFFF !important;
+}
+
+.username {
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.menu {
+    background-color: transparent;
+    display: flex;
+}
+
+    .menu > .nav-link {
+        color: #FFFFFF;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+.submitBtn {
+    background: #FF6801;
+    border: #FF6801;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Survey Page CSS */
+#tblSurvey tbody tr td:nth-child(2) {
+    color: #013E7D;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.survey-title label {
+    color: #013E7D;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    line-height: 31px;
+    font-style: normal;
+    padding: 20px 0px 20px 16px;
+}
+
+table tr th {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500 !important;
+    text-align: center;
+    background: #F2F3F3;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background: #FFFFFF;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background: #F2F3F3;
+}
+
+@media (min-width: 992px) {
+    .table-data {
+        overflow: hidden !important;
+    }
+}
+
+
+/*.dropdown-menu {
+    min-width: 7rem;
+    padding: 0.5rem 0.5em;
+    margin: 0 0 0 -5em;
+    text-align: center;
+    background-color: #FF6801;
+}
+
+    .dropdown-menu li a {
+        color: #FFFFFF !important;
+    }*/
+
+footer {
+    background-color: #333333;
+    padding-top: 0px !important;
+}
+
+.footer-right a, .footer-copyright {
+    color: #FFFFFF !important;
+}
+
+/* Project Dashboard */
+/*#inProgress {
+    background: #FFE2E5;
+}
+
+#atRisk {
+    background: #FFF4DE;
+}
+
+#completed-with-survey {
+    background: #DCFCE7;
+}
+
+#customer-satisfaction-rating {
+    background: #F3E8FF;
+}
+
+.tile {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 15px;
+    min-height: 150px;
+}
+
+.stat-number {
+    font-weight: 500;
+    font-size: 50px !important;
+    padding-top: 2px;
+}
+
+.stat-name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px !important;
+    line-height: 22px;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 8px;
+    top: 10px;
+}
+
+.lastactivity {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    margin: auto;
+}
+
+.show-btn {
+    border-radius: 4px;
+    background: #FF6801;
+    border: none;
+    color: #FFFFFF;
+    width: 69px;
+    height: 33px;
+    margin-top: 5px;
+}
+
+.pd-select .form-control {
+    border: 1px solid #8B8B8B;
+    border-radius: 4px;
+    color: #333333;
+    font-size: 14px !important;
+    font-weight: 300;
+}
+
+.pd-select a {
+    font-weight: 700;
+    color: #013E7D;
+}
+
+#tblProject tr th {
+    color: #333333 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    width: 85px !important;
+}
+
+#tblProject thead th {
+    vertical-align: middle !important;
+}
+
+#tblProject tbody tr td:nth-child(1) {
+    color: #013E7D !important;
+    font-weight: 300 !important;
+    font-size: 13px !important;
+}
+
+table.dataTable tbody td {
+    padding: 8px 10px;
+    font-size: 13px !important;
+    font-style: normal;
+    color: #013E7D;
+}
+
+tr {
+    height: 70px;
+}
+
+td {
+    vertical-align: middle !important;
+    min-height: 200px;
+}
+
+.badge {
+    display: block !important;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.icon-stat {
+    border-radius: 50%;
+    height: 40px;
+    width: -79px;
+    padding: 5px 1px 18px 5px;
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+#inProgress > div > .icon-stat {
+    background: #F18F99;
+}
+
+#completed-with-survey > div > .icon-stat {
+    background: #48D779 !important;
+}
+
+#atRisk > div > .icon-stat {
+    background: #FF9D5B !important;
+}
+
+#customer-satisfaction-rating > div > .icon-stat {
+    background: #C299EF;
+}*/
+
+/*Surface Duo
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5) {
+    /* CSS 
+    .tiles {
+        width: 50% !important;
+    }
+    .stat-name {
+        margin-left: 0px !important;
+    }
+}
+@media (min-width: 768px) {
+    .tiles {
+        width: 50% !important;
+    }
+    .stat-name {
+        margin-left: 0px !important;
+    }
+}
+@media only screen and (max-width : 320px) and (max-height : 480px) {
+    /* Styles here 
+}*/
+
+/* Add Survey */
+.form-group label {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 22px;
+    color: #333333;
+}
+
+#btnAddNewQuestion {
+    background-color: #494949 !important;
+    border-radius: 4px;
+}
+
+#btnAddNewSection {
+    background-color: #494949 !important;
+    border-radius: 4px;
+}
+
+#btnCancel, #btnSaveSurvey, #btnSaveQuestion, .btnCancelPopup, #btnSend, #btnSave {
+    border: 1px solid #8B8B8B;
+    border-radius: 4px;
+}
+
+.form-control {
+    border: 1px solid #8B8B8B !important;
+}
+
+    .form-control option {
+        font-weight: 300 !important;
+    }
+
+
+.btn {
+    font-size: 14px !important;
+}
+
+.required {
+    color: #FF0000;
+}
+
+.que-name h4 span, .que-ans h5 span {
+    font-size: 16px !important;
+}
+
+.ui-dialog-titlebar-close::after {
+    content: "X"; /*"\274C";*/
+    margin-left: -3px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    padding: 0px !important;
+}
+
+.ui-dialog {
+    width: 80% !important;
+    top: 20% !important;
+    left: 10% !important;
+    display: block;
+}
+
+.ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-size: 16px !important;
+    font-family: 'Lato' !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    line-height: 19px !important;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.form-control {
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.table thead th, table.dataTable.no-footer {
+    border-bottom: 1px solid #DADADA !important;
+}
+
+.table thead th {
+    border-top: 1px solid #DADADA !important;
+    vertical-align: middle !important;
+}
+
+.table-bordered {
+    border: none !important;
+}
+
+.infoIcon {
+    width: 15px;
+    height: 15px;
+}
+
+.footerCl {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: small;
+}
+
+
+
+/*Model popop start */
+/*legend {
+    border: none;
+    width: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.ui-dialog {
+    z-index: 10100 !important;
+}
+
+.popup-bottom-border {
+    border-bottom: 2px solid #ebecf0;
+    margin-bottom: 20px;
+}
+
+.popup-top-border {
+    border-top: 2px solid #ebecf0;
+    padding-top: 20px;
+}
+
+.dialogue-border {
+    border: 1px solid #ebecf0 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 8px 16px -4px rgba(9,30,66,0.25), 0 0 1px rgba(9,30,66,0.31) !important;
+}
+
+.popup-header {
+    margin-top: 0;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-size: 16px !important;
+    font-family: 'Lato' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 19px !important;
+    color: #333333 !important;
+}*/
+/*Model popop end */

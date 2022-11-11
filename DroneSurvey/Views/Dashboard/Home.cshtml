@@ -1,0 +1,333 @@
+﻿@model DroneSurvey.Models.ImageUpload
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>
+        CriticalRiver Drone Image Upload
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    @* <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />*@
+    @* <link rel="stylesheet" href="~/css/bootstrap.min.css">*@
+    @* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
+
+
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <link href="https://cdn.datatables.net/scroller/1.5.1/css/scroller.dataTables.min.css" rel="stylesheet" />
+    <script src="https://cdn.datatables.net/scroller/1.5.1/js/dataTables.scroller.min.js"></script>
+
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.jqueryui.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/scroller/2.0.1/css/scroller.jqueryui.min.css" rel="stylesheet" />
+
+
+</head>
+    
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="~/images/critical_river_final.svg" alt="" width="230" height="41">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto"></ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <!--  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+                    <div class="profile-img">
+                        <img src="~/images/avtar.png" alt="john">
+                    </div>
+                    <div class="username" style="display:block;">
+                        <!--<span><b><partial name="_LoginPartial" /></b></span>-->
+                        <span><b>John Deo</b></span><br />
+                        <span>Associate Director</span>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-default" type="button" data-toggle="dropdown">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sign Out</a></li>
+
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header">
+            <div class="container">
+                <h6>Image Upload</h6>
+            </div>
+        </div>
+    </header>
+    <div id="popupModal" style="width: 1800px;
+        height: 900px;
+        display: none;
+        padding: 15px;">
+    </div>
+    <div class="container" style="padding-bottom: 100px !important; max-width:1650px;">
+        <div class="row survey-title">
+            <label id="survey-Details">Upload History</label>
+        </div>
+        <div class="col-md-12 col-sm-12 col-lg-12 table-data" style="overflow:scroll;margin-bottom:5%;">
+            <table id="tblUploadHistory" class="table table-bordered table-striped;">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Upload Time</th>
+                        <th>Upload Status</th>
+                        <th>Folder Name</th>
+                        <th>Image Count</th>
+                        <th>ORI Status</th>
+                        <th>Quality Check Status</th>
+                        <th>Polygon Status</th>
+                        <th>Polygon Accepted</th>
+                        <th>Comments</th>
+                        <th>Error Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                @*<tr>
+                <td>Penukonda</td>
+                <td>25 Oct 2022 2 PM</td>
+                <td>Created</td>
+                <td>droneimagecontainer</td>
+                <td>50</td>
+                <td>Completed</td>
+                <td>Completed</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td></td>
+                <td></td>
+                <td><span title = "View" class="ViewImage"><img src="/images/search.png"></span></td>
+                </tr>
+                <tr>
+                <td>Gudupalle</td>
+                <td>25 Oct 2022 6 PM</td>
+                <td>Created</td>
+                <td>droneimagecontainer</td>
+                <td>30</td>
+                <td>Not Started</td>
+                <td>Not Started</td>
+                <td>No</td>
+                <td>No</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>*@
+            </table>
+        </div>
+    </div>
+    <footer class="fixed-bottom page-footer font-small blue">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row footer-copyright text-center">
+                <div class="col-sm-12 col-md-12 col-sm-12 footerCl">&copy;&nbsp;Copyright @DateTime.Now.Year - CriticalRiver </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // Create dialog
+        $("#popupModal").dialog({
+            autoOpen: false,
+            modal: true,
+            minWidth: 1000,
+            dialogClass: 'dialogue-border',
+            draggable: true,
+            resizable: false
+        });
+
+        BindDataTable();
+
+       
+
+    });
+    function BindDataTable() {
+        var datatbl = $("#tblUploadHistory").DataTable();
+        datatbl.clear();
+        datatbl.destroy();
+
+        var table = $("#tblUploadHistory");
+        table.find('tbody tr').empty();
+
+        $.ajax({
+            url: "GetImageUploadHistory",
+            type: "GET",
+            async: false,
+            success: function(data) {
+                console.log(data.data);
+                if (data.data != null && data.data != undefined) {
+                    var tr = '';
+                    $.each(data.data, function(i, e) {
+                        tr += '<tr>'
+                            + '<td>' + data.data[i].location + '</td>'
+                            + '<td>' + data.data[i].uploadTime + '</td>'
+                            + '<td>' + data.data[i].uploadStatus + '</td>'
+                            + '<td>' + data.data[i].containerUrl + '</td>'
+                            + '<td>' + data.data[i].imageUploadCount + '</td>'
+                            + '<td>' + data.data[i].orthomosaicStatus + '</td>'
+                            + '<td>' + data.data[i].qcStatus + '</td>'
+                            + '<td>' + data.data[i].polygonStatus + '</td>'
+                            + '<td>' + data.data[i].polygonAcceptanceStatus + '</td>'
+                            + '<td> </td>'
+                            + '<td> </td>';
+                        if (data.data[i].qcStatus == "Completed") {
+                            tr += '<td data-id="' + data.data[i].id + '" style="text-align:center;">'
+                                + '<span title = "View" class="ViewImage"><img src="/images/search.png"></span>';
+                        }
+                        else {
+                            
+                            if (data.data[i].orthomosaicStatus == "Completed") {
+                                tr += '<td data-id="' + data.data[i].id + '" style="text-align:center;">'
+                                    + '<span title = "View" class="QCImage"><img src="/images/QC.png"></span>';
+                            }
+                            else{
+                                tr += '<td data-id="' + data.data[i].id + '" style="text-align:center;">';
+                                + '';
+                            }
+                        }
+
+                        tr += '</td> </tr>';
+                    });
+                    table.find('tbody').append(tr);
+                }
+                else {
+                    alert("No Data");
+                }
+            },
+            Error: function() {
+                alert("Error");
+            }
+        });
+
+        $("#tblUploadHistory").DataTable({
+            retrieve: true,
+            "scrollCollapse": true,
+            "searching": true,
+            "destroy": true,
+            "columnDefs": [
+                {
+                    "targets": 0,
+                    "orderable": false,
+                    "visible": true,
+                    "width": "15%"
+                },
+                {
+                    "targets": 1,
+                    "visible": true,
+                    "width": "15%",
+                },
+                {
+                    "targets": 2,
+                    "visible": true,
+                    "width": "5%",
+                    className: 'dt-body-center',
+                },
+                {
+                    "targets": 3,
+                    "visible": true,
+                    "width": "5%",
+                    className: 'dt-body-left',
+                },
+                {
+                    "targets": 4,
+                    "visible": true,
+                    "width": "5%",
+                    className: 'dt-body-center',
+                },
+                {
+                    "targets": 5,
+                    "visible": true,
+                    "width": "10%",
+                    className: 'dt-body-center',
+                },
+                {
+                    "targets": 6,
+                    "visible": true,
+                    "width": "10%",
+                    className: 'dt-body-center',
+                },
+                {
+                    "targets": 7,
+                    "visible": true,
+                    "width": "10%",
+                    className: 'dt-body-center',
+                },
+                {
+                    "targets": 8,
+                    "visible": true,
+                    "width": "10%",
+                    className: 'dt-body-center',
+                },
+                {
+                    "targets": 9,
+                    "visible": true,
+                    "width": "5%"
+                },
+                {
+                    "targets": 10,
+                    "visible": true,
+                    "width": "5%"
+                },
+                {
+                    "targets": 11,
+                    "visible": true,
+                    "width": "5%"
+                },
+            ],
+            "order": [1, "ASC"],
+            "fnDrawCallback": function(oSettings) {
+                EventsOnDataTable();
+            }
+        });
+
+        EventsOnDataTable();
+    }
+    function EventsOnDataTable() {
+         $(".ViewImage").off('click').on('click', function(e) {
+            window.location.href = "@Url.Action("ArcGISIFrame", "ArcGIS")";
+        });
+
+        $(".QCImage").off('click').on('click', function(e) {
+            $.ajax({
+                url: 'ViewImageModelPopup',
+                type: 'GET',
+                async: false,
+                success: function(data) {
+                    $("#popupModal").html(data);
+                    $("#popupModal").dialog('open');
+
+                    ViewImageModelPopupEvents();
+                },
+                error: function(error) {
+                    currentEle.prop("disabled", false);
+                }
+            });
+        });
+    }
+    function ViewImageModelPopupEvents() {
+        $("#btnQCApprove").click(function() {
+            alert("Aprove");
+        });
+        $("#btnQCReject").click(function() {
+             alert("Reject");
+        });
+    }
+</script>
+</html>
