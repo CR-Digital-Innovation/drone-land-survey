@@ -37,7 +37,7 @@ namespace fnBlobBatchDataSync
                 if (dal.CreateBatch(batchName, dirName))
                 {
                     segmentSize = 10;
-                    BlobContainerClient containerClient = new BlobContainerClient("DefaultEndpointsProtocol=https;AccountName=droneimagestorage;AccountKey=B2IITgBKK5vG1HsQBxSC5l77wHLK9AEQfjoljZ1ZnoRjIBZGv8WXa+kK05Jl5Tq1niJYgeD+totM+AStGhF8HA==;EndpointSuffix=core.windows.net", "vendorcontainersync1");
+                    BlobContainerClient containerClient = new BlobContainerClient("", "vendorcontainersync1");
 
                     // Call the listing operation and return pages of the specified size.
                     var resultSegment = containerClient.GetBlobsAsync()
@@ -74,10 +74,10 @@ namespace fnBlobBatchDataSync
 
         private static void MoveFiles(string srcBlobName, string destBlobName)
         {
-            string accountName = "droneimagestorage";
-            string storageKey = "B2IITgBKK5vG1HsQBxSC5l77wHLK9AEQfjoljZ1ZnoRjIBZGv8WXa+kK05Jl5Tq1niJYgeD+totM+AStGhF8HA==";
-            string sourceContainerName = "vendorcontainersync1";
-            string destContainerName = "droneimagecontainer";
+            string accountName = "";
+            string storageKey = "";
+            string sourceContainerName = "";
+            string destContainerName = "";
 
             var cred = new StorageCredentials(accountName, storageKey);
             var account = new CloudStorageAccount(cred, true);
@@ -130,7 +130,7 @@ namespace fnBlobBatchDataSync
 
             try
             {
-                emailContent.ToAddress = "mansoor.ramzani@criticalriver.com";
+                emailContent.ToAddress = "";
                 emailContent.Subject = "Drone Survey Notification";
                 emailContent.Body = body;
 
