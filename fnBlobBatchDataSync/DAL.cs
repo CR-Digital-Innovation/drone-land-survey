@@ -16,11 +16,7 @@ namespace fnBlobBatchDataSync
 
         internal DAL()
         {
-            //var builder = new ConfigurationBuilder()
-            //.AddJsonFile("appSettings.json");
-            //Configuration = builder.Build();
-            //ConnString = Configuration["ConnectionStrings:DefaultConnection"];
-            ConnString = "Server=cr-devopsassessment.database.windows.net; Database=DroneSystem; User ID=cr-admin; Password=P455w0rd@12345;";
+            
         }
 
         internal bool CreateBatch(string batchUid, string dirPath)
