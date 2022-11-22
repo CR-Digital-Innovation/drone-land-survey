@@ -1,5 +1,0 @@
-# Blob endpoint only
-DefaultEndpointsProtocol=https;
-BlobEndpoint=https://droneimagestorage.blob.core.windows.net/vendorcontainersync1;
-AccountName=droneimagestorage;
-AccountKey=B2IITgBKK5vG1HsQBxSC5l77wHLK9AEQfjoljZ1ZnoRjIBZGv8WXa+kK05Jl5Tq1niJYgeD+totM+AStGhF8HA==
