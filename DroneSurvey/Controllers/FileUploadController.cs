@@ -5,7 +5,7 @@ namespace DroneSurvey.Controllers
 {
     public class FileUploadController : Controller
     {
-        static string containerConnString = "DefaultEndpointsProtocol=https;AccountName=droneimagestorage;AccountKey=B2IITgBKK5vG1HsQBxSC5l77wHLK9AEQfjoljZ1ZnoRjIBZGv8WXa+kK05Jl5Tq1niJYgeD+totM+AStGhF8HA==;EndpointSuffix=core.windows.net";
+        static string containerConnString = "";
         static string containerName = "droneimagecontainer";
         public IActionResult ImageUpload()
         {
